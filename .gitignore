@@ -1,0 +1,39 @@
+vendor
+# gitignore template for Drupal 8 projects
+#
+# earlier versions of Drupal are tracked in `community/PHP/`
+
+# Ignore configuration files that may contain sensitive information
+/sites/*/*settings*.php
+/sites/*/*services*.yml
+
+# Ignore paths that may contain user-generated content
+/sites/*/files
+/sites/*/public
+/sites/*/private
+/sites/*/files-public
+/sites/*/files-private
+
+# Ignore paths that may contain temporary files
+/sites/*/translations
+/sites/*/tmp
+/sites/*/cache
+
+# Ignore testing related files
+/sites/simpletest
+
+# Ignore drupal core (if not versioning drupal sources)
+web/core
+web/vendor
+web/modules/README.txt
+web/profiles/README.txt
+web/themes/README.txt
+web/sites/README.txt
+web/sites/example.sites.php
+web/sites/example.settings.local.php
+web/sites/development.services.yml
+web/.gitattributes
+web/.ht.router.php
+web/.htaccess
+web/autoload.php
+web/example.gitignore
